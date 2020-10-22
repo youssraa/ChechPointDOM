@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title> shopping cart </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">  	
+
+  </head>
+<body>
+<div id="toast"></div>
+<div id="toast-cart"></div>
+<div class="container">
+  <h1>SHOP NOW</h1>
+  <hr>
+  <br>
+ <div class = "glob"><i class="fas fa-shopping-cart cart"></i><h5> cart <span class="tot">  0   </span>$</h5> </div>
+  <div class="row">
+  <div class="col-lg-4">
+    <div class="card" style="width: 18rem;">
+      <span id="heart" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
+      <span id="delete-selection" class="delete-selection"> <i onClick= " removeList()" class="fas fa-times-circle"></i> </span>
+      <img src="https://images.unsplash.com/photo-1565208565380-02138793c3b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" class="first-image">
+  <div class="card-body">
+    <div class="controls">
+        <div class="up" onclick="quantity()" >+</div>
+        <span class="updown"> 0 </span> 
+        <div class="down" onclick="quantity()">-</div>
+        <div class='priceT' color ="black">98.00</div>
+    </div>
+    <button type="button" class="btn btn-secondary" onclick="addCart()"><center>Add to cart</center></button>
+    <hr>
+    <center>
+      <h5 class="card-title">Black Pants</h5>
+    </center>
+    <div >$<span class='price' >98.00</span></div>
+  </div>
+</div>
+</div>
+      <div class="col-lg-4">
+    <div class="card" style="width: 18rem;">
+       <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
+       <span id="delete-selection" class="delete-selection" onclick="removeProduct()"> <i onClick= " removeList()" class="fas fa-times-circle"></i> </span>
+       <img src="https://images.unsplash.com/photo-1549062572-544a64fb0c56?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="first-image">
+  <div class="card-body">
+    <div class="controls">
+      <div class="up"  >+</div>
+      <span class="updown"> 0  </span> 
+      <div class="down">-</div>
+      <div class='priceT'>168.00</div>
+    </div>
+    <button type="button" class="btn btn-secondary" onclick="addCart()"><center>Add to cart</center><a href="#" onclick="addCart()" ></a></button>
+    <hr>
+    <center>
+      <h5 class="card-title">T-shirt</h5>
+    </center>
+    <div class=>$<span class="price">168.00</span></div>
+  </div>
+</div>
+</div>
+    <div class="col-lg-4">
+    <div class="card" style="width: 18rem;">
+      <span id="heart-third" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
+      <span id="delete-selection" class="delete-selection"> <i onClick= " removeList()" class="fas fa-times-circle"></i> </span>
+      <img src="https://images.unsplash.com/photo-1565279586461-293ae487de37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" class="first-image">
+  <div class="card-body">
+    <div class="controls">
+    <div class="up" onclick="quantity()" >+</div>
+    <span class="updown"> 0 </span> 
+    <div class="down" onclick="quantity()">-</div>
+    <div class='priceT'>126.00</div>  
+    </div>
+    <button type="button" class="btn btn-secondary" onclick="addCart()" class="add-cart cart1"><center>Add to cart</center><a href="#" onclick="addCart()" ></a></button>
+    <hr>
+    <center>
+      <h5 class="card-title">Pants</h5>
+    </center>
+    <div>$<span class='price'>126.00</span></div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+<script type="text/javascript" src="./javascript/cart.js"></script>
+</body>
+</html>

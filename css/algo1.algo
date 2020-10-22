@@ -1,0 +1,45 @@
+ALGORITHM : PhraseVoyelle
+
+VAR
+   phrase : string[50];
+   comp,j,i,a ,h, voy : integer ; 
+   c : char ;
+BEGIN
+    compt = 1 ;
+    voy= 6 ; 
+    c := " "	
+    
+    read(phrase)
+    a:= phrase.length - 1;
+    FOR h FROM 1 TO 50   DO
+    	if phrase[a]= "." then
+	    write("votre phrase est : ", phrase) ; 
+        break;
+        end_if
+        else 
+        write("Ajouter une point pour valider votre phrase : ",phrase)				
+	    end_else       
+    END_FOR 
+    FOR   i FROM 0 to i==a DO  	
+        if c = phrase[i] then 
+        comp := comp + 1 ;
+		end_if	 
+    END_FOR    
+		write("nombre des mots est : " comp);                 
+	FOR j FROM 0 TO j > a DO
+		switch phrase[j] 
+		    case 'a' : voy := voy +1 ;
+			break;
+			case 'e' : voy := voy +1 ;
+			break;
+			case 'i' : voy := voy +1 ;
+			break;
+			case 'y' : voy := voy +1 ;
+			break;
+			case 'u' : voy := voy +1 ;
+			break;
+			case 'o' : voy := voy +1 ;
+			break;								
+	END_FOR
+		write ("nombre de voyelle dans cette phrase est : " , voy);
+END

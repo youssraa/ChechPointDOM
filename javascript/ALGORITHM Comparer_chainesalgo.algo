@@ -1,0 +1,31 @@
+ALGORITHM Comparer_chaines
+VAR
+ chaine1 : ARRAY_OF[10] ;
+ chaine2 : ARRAY_OF[10] ;
+ distinct : ARRAY_OF[10] ;
+ longueur1 , longueur2 , i,j ,k : integer ; 
+BEGIN
+ //La premiére methode 
+ i:=0;
+ j:=0;
+ k:=0;
+ readln("entreé la chaine n°: 1" , chaine1) 
+ readln("entreé la chaine n°: 2" , chaine2)
+ longueur1 := chaine1.lenght ;
+ longueur2:= chaine2.lenght ;
+
+    FOR i FROM 1 to longueur1 -1 
+        FOR j FROM 1 to longueur2 -1 
+             IF (chaine2[i] <> chaine1[j]) THEN
+                distinct[k] := chaine2[i];                
+             ELSE 
+             break;
+             END_IF
+             
+	     END-FOR
+         
+			
+        
+END-FOR	 
+   write("La somme des nombre distinct est : " Sum )
+END
